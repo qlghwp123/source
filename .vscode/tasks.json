@@ -12,7 +12,7 @@
             "label": "save and compile for C++",
             "command": "g++",
             "args": [
-                "${fileDirname}\\*.cpp",
+                "${fileDirname}/\\*.cpp",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
             ],
