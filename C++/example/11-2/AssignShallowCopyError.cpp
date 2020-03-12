@@ -26,6 +26,18 @@ public:
         delete []name;
         cout << "called destructor!" << endl;
     }
+    /*Solution to avoid memory leak and do deep copy
+    Person& operator=(const Person& ref)
+    {
+        delete []name;
+        int len = strlen(ref.name) + 1;
+        name = new char[len];
+        strcpy(name, ref.name);
+        age = ref.age;
+
+        return *this;
+    }
+    */
 };
 
 int main(void)
