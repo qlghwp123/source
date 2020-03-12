@@ -38,5 +38,6 @@ int main(void)
     man1.ShowPersonInfo();
     man2.ShowPersonInfo();
 
+
     return 0;
 }
