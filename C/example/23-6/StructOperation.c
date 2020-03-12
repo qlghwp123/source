@@ -1,0 +1,26 @@
+/*
+구조체 변수 간 멤버 대 멤버 복사가 진행됨을 볼 수 있다.
+*/
+
+#include <stdio.h>
+
+typedef struct point
+{
+    int xpos;
+    int ypos;
+} Point;
+
+int main(void)
+{
+    Point pos1 = {1, 2};
+    Point pos2;
+
+    pos2 = pos1;
+
+    printf("크기 : %d\n", sizeof(pos1));
+    printf("[%d, %d]\n", pos1.xpos, pos1.ypos);
+    printf("크기 : %d\n", sizeof(pos2));
+    printf("[%d, %d]\n", pos2.xpos, pos2.ypos);
+
+    return 0;
+}
