@@ -1,0 +1,12 @@
+=========================================================================================================================================
+You fixed this problem by changing to gcc as the compiler...For someone choosing MSVC, 
+I fixed the "cannot open source file "corecrt.h" (dependency of "iostream")" issue by changing the include path in c_cpp_properties.json
+
+"D:/Program Files/Microsoft/MSVC2017/VC/Tools/MSVC/14.12.25827/include/*"
+"C:/Program Files (x86)/Windows Kits/10/Include/10.0.10240.0/ucrt"
+"C:/Program Files (x86)/Windows Kits/10/Lib/10.0.10240.0/ucrt/x64",
+==========================================================================================================================================
+for me, I solved the problem by adding second one to includePath in configuration of C/C++ Extention.
+
+
+source : https://gitmemory.com/issue/microsoft/vscode-cpptools/1237/508881471
