@@ -7,6 +7,7 @@ I fixed the "cannot open source file "corecrt.h" (dependency of "iostream")" iss
 "C:/Program Files (x86)/Windows Kits/10/Lib/10.0.10240.0/ucrt/x64",
 ==========================================================================================================================================
 for me, I solved the problem by adding second one to includePath in configuration of C/C++ Extention.
-
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt
+C:\Program Files (x86)\Windows Kits\10\Lib\10.0.18362.0\ucrt\x64
 
 source : https://gitmemory.com/issue/microsoft/vscode-cpptools/1237/508881471

@@ -12,7 +12,7 @@
             "label": "save and compile for C++",
             "command": "g++",
             "args": [
-                "${fileDirname}/\\*.cpp",
+                "${fileDirname}\\*.cpp",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
             ],
@@ -41,7 +41,7 @@
             "label": "save and compile for C",
             "command": "gcc",
             "args": [
-                "${fileDirname}/\\*.c",
+                "${file}",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
             ],
@@ -65,12 +65,6 @@
                 }
             }
         },
-        // 바이너리 실행(Ubuntu)
-        // {
-        //     "label": "execute",
-        //     "command": "cd ${fileDirname} && ./${fileBasenameNoExtension}",
-        //     "group": "test"
-        // }
         // 바이너리 실행(Windows)
         {
             "label": "execute",
