@@ -68,11 +68,10 @@
         // 바이너리 실행(Windows)
         {
             "label": "execute",
-            "command": "cmd",
+            "command": "powershell",
             "group": "test",
             "args": [
-                "/C",
-                "${fileDirname}\\${fileBasenameNoExtension}"
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ]
         }
     ]
