@@ -1,3 +1,6 @@
+/*
+규칙을 파악한 후 잘 정리한 다음 코드로 서술하였다.
+*/
 #include <iostream>
 
 using namespace std;
